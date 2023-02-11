@@ -298,6 +298,13 @@ img {
     background-color: var(--first-color);
     color: #fff;
 }
+.home__social::after{
+    content: '';
+    width: 32px;
+    height: 2px;
+    background-color: var(--first-color);
+    transform: rotate(90deg) translate(16px 3px);
+}
 /*=============== BUTTONS ===============*/
 
 
