@@ -221,7 +221,76 @@ img {
     row-gap: 4.5rem;
     padding-top: 2rem;
 }
+.home__data{
+    text-align: center;
+}
+.home__gretting,
+.home__education{
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+}
+.home__gretting{
+    display: block;
+    color: var(--title-color);
+    margin-bottom: .25rem;
+}
 
+.home__education{
+    color: var(--title-color);
+    margin-bottom: 2.5rem;
+}
+
+.home__name{
+    font-size: var(--biggest-font-size);
+}
+.home__handle{
+    width: 190px;
+    justify-self: center;
+    height: 293px;
+    background: linear-gradient(180deg,
+                hsla(var(--first-hue), var(--sat), var(--lig), 1),
+                hsla(var(--first-hue), var(--sat), var(--lig), .2)
+                );
+    border-radius: 10rem 10rem 1rem 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+}
+.home__img{
+    width: 160px;
+}
+.home__buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.home__social,
+.home__scroll{
+    position: absolute;
+}
+.home__social{
+    bottom: 5rem;
+    left: 0;
+    display: grid;
+    row-gap: .5rem;
+}
+.home__social-links{
+    width: max-content;
+    background-color: var(--background-color);
+    color: var(--first-color);
+    padding: .25rem;
+    border-radius: .25rem;
+    display: flex;
+    font-size: 1rem;
+    transition: .4s;
+}
+.home__social-links:hover{
+    background-color: var(--first-color);
+    color: #fff;
+}
 /*=============== BUTTONS ===============*/
 
 
