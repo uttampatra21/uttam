@@ -181,6 +181,9 @@ img {
 .nav__logo:hover{
     color: var(--first-color-alt);
 }
+.chsnge-theme{
+    font-size: 1.5rem;
+}
 .nav___menu{
     position: fixed;
     bottom: 1rem;
@@ -197,7 +200,7 @@ img {
 }
 .nav__link{
     color: var(--text-color);
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     padding: .4rem;
     display: flex;
     border-radius: 5rem;
@@ -287,7 +290,7 @@ img {
     padding: .25rem;
     border-radius: .25rem;
     display: flex;
-    font-size: 1rem;
+    font-size: 1.5rem;
     transition: .4s;
 }
 .home__social-links:hover{
