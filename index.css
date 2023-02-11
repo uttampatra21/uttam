@@ -177,6 +177,7 @@ img {
     color: var(--first-color);
     font-weight: var(--font-medium);
     transition: .4s;
+    font-size: 1.8rem;
 }
 .nav__logo:hover{
     color: var(--first-color-alt);
