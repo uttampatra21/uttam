@@ -305,8 +305,31 @@ img {
     background-color: var(--first-color);
     transform: rotate(90deg) translate(16px 3px);
 }
+.home__scroll{
+    color: var(--first-color);
+    right: -1.5rem;
+    bottom: 4rem;
+    display: grid;
+    row-gap: 2.25rem;
+    justify-items: center;
+}
+.home__scroll-icon{
+    font-size: 1.5rem;
+}
+.home__scroll-name{
+    font-size: var(--smaller-font-size);
+    transform: rotate(-90deg);
+}
 /*=============== BUTTONS ===============*/
-
+.button{
+    display: inline;
+    background-color: var(--first-color);
+    color: var(--body-color);
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+    transition: .4s;
+}
 
 /*=============== ABOUT ===============*/
 
