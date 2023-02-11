@@ -216,7 +216,11 @@ img {
 
 
 /*=============== HOME ===============*/
-
+.home__container{
+    position: relative;
+    row-gap: 4.5rem;
+    padding-top: 2rem;
+}
 
 /*=============== BUTTONS ===============*/
 
