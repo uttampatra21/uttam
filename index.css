@@ -330,6 +330,15 @@ img {
     font-weight: var(--font-medium);
     transition: .4s;
 }
+.button--ghost{
+    background-color: transparent;
+    border: 2px solid var(--first-color);
+    color: var(--first-color);
+}
+.button--ghost:hover{
+    background-color: var(--first-color-alt);
+    color: var(--body-color);
+}
 
 /*=============== ABOUT ===============*/
 
