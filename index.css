@@ -461,7 +461,10 @@ img {
     transition: .5s;
 }
 /*! Services modal */
-
+.services__model{
+    position: fixed;
+    
+}
 
 /*!Active modal*/
 
