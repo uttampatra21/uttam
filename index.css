@@ -1,12 +1,12 @@
-/*=============== GOOGLE FONTS ===============*/
+/*!=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
+/*!=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
 
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
+  /*!========== Colors ==========*/
+  /*!Color mode HSL(hue, saturation, lightness)*/
   /*
         Purple: hsl(250, 66%, 75%)
         Blue: hsl(207, 90%, 72%)
@@ -25,8 +25,8 @@
   --body-color: hsl(var(--second-hue), 48%, 8%);
   --container-color: hsl(var(--second-hue), 32%, 12%);
 
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
+  /*!========== Font and typography ==========*/
+  /*!.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Poppins', sans-serif;
   --biggest-font-size: 1.75rem;
   --h1-font-size: 1.5rem;
@@ -37,17 +37,17 @@
   --smaller-font-size: .75rem;
   --tiny-font-size: .625rem;
 
-  /*========== Font weight ==========*/
+  /*!========== Font weight ==========*/
   --font-medium: 500;
   --font-semibold: 600;
 
-  /*========== z index ==========*/
+  /*!========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
 }
 
-/* Responsive typography */
+/*! Responsive typography */
 @media screen and (min-width: 968px) {
   :root {
     --biggest-font-size: 2.5rem;
@@ -60,7 +60,7 @@
   }
 }
 
-/*=============== BASE ===============*/
+/*!=============== BASE ===============*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -111,10 +111,10 @@ img {
   height: auto;
 }
 
-/*=============== THEME ===============*/
+/*!=============== THEME ===============*/
 
 
-/*========== Variables Dark theme ==========*/
+/*!========== Variables Dark theme ==========*/
 
 
 /*========== 
@@ -123,13 +123,12 @@ img {
 ==========*/
 
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+/*!=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 968px;
   margin-left: 1rem;
   margin-right: 1rem;
 }
-
 .grid {
   display: grid;
   gap: 1.25rem;
@@ -160,7 +159,7 @@ img {
   color: var(--text-color-light);
 }
 
-/*=============== HEADER & NAV===============*/
+/*!=============== HEADER & NAV===============*/
 .header{
     position: fixed;
     top: 0;
@@ -209,7 +208,7 @@ img {
     border-radius: 5rem;
 }
 
-/* Active link */
+/*! Active link */
 .active-link{
     background: linear-gradient(180deg,
                 hsla(var(--first-hue),var(--sat), var(--lig), 1),
@@ -218,10 +217,13 @@ img {
     box-shadow: 0 0 16px hsla(var(--first-hue),var(--sat), var(--lig), .4);
 }
 
-/* Change background header */
+/*! Change background header */
+.scroll-header{
+    box-shadow: 0px 4px 4px hsla(0, 0%, 4%, .3);
+}
 
 
-/*=============== HOME ===============*/
+/*!=============== HOME ===============*/
 .home__container{
     position: relative;
     row-gap: 4.5rem;
@@ -322,7 +324,7 @@ img {
     font-size: var(--smaller-font-size);
     transform: rotate(-90deg);
 }
-/*=============== BUTTONS ===============*/
+/*!=============== BUTTONS ===============*/
 .button{
     display: inline;
     background-color: var(--first-color);
@@ -342,7 +344,7 @@ img {
     color: var(--body-color);
 }
 
-/*=============== ABOUT ===============*/
+/*!=============== ABOUT ===============*/
 .about__container{
     row-gap: 2.5rem;
 }
@@ -381,44 +383,47 @@ img {
 .about__description{
     margin-bottom: 2.5rem;
 }
-/*=============== SKILLS ===============*/
+.masaischool{
+    color: var(--first-color);
+}
+/*!=============== SKILLS ===============*/
 
 
-/*=============== SERVICES ===============*/
+/*!=============== SERVICES ===============*/
 
 
-/* Services modal */
+/*! Services modal */
 
 
-/*Active modal*/
+/*!Active modal*/
 
 
-/*=============== WORK ===============*/
+/*!=============== WORK ===============*/
 
 
-/* Active item work*/
+/*! Active item work*/
 
 
-/*=============== TESTIMONIAL ===============*/
+/*!=============== TESTIMONIAL ===============*/
 
 
-/* Swiper class */
+/*! Swiper class */
 
 
-/*=============== CONTACT ===============*/
+/*!=============== CONTACT ===============*/
 
 
-/*=============== FOOTER ===============*/
+/*!=============== FOOTER ===============*/
 
 
-/*=============== SCROLL BAR ===============*/
+/*!=============== SCROLL BAR ===============*/
 
 
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
+/*!=============== BREAKPOINTS ===============*/
+/*! For small devices */
 
 
-/* For medium devices */
+/*! For medium devices */
 
 
-/* For large devices */
+/*! For large devices */
