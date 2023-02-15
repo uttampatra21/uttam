@@ -28,7 +28,6 @@ modelClose.forEach((i)=>{
         });
     }); 
 });
-
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 
 
