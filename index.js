@@ -22,7 +22,6 @@ modelBtn.forEach((mb, i)=>{
 });
 
 modelClose.forEach((i)=>{
-    console.log(i);
     i.addEventListener('click', () =>{
         modelViews.forEach((mv)=>{
             mv.classList.remove('active__model');
