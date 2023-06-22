@@ -33,8 +33,6 @@ modelClose.forEach((i) => {
 
 /* Link active work */
 let acxtive_links = document.querySelector(".nav__link");
-let l = acxtive_links.length();
-console.log(l);
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
