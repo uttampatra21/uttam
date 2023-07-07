@@ -56,6 +56,49 @@
   }
 }
 
+/*!=============== PRELOADER ===============*/
+#preloader {
+  background: #000 url(https://i.gifer.com/embedded/download/7S7P.gif) no-repeat
+    center center;
+  background-size: 30%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+#cursor {
+  position: fixed;
+  /* bottom: 500px; */
+  display: flex;
+  z-index: 999;
+  background: #0ef;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 20px #0ef, 0 0 60px #0ef, 0 0 100px #0ef, 0 0 20px #0ef;
+  animation: colors 5s infinite;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+@keyframes colors {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+#cursor::before {
+  content: " ";
+  position: absolute;
+  background: #0ef;
+  width: 30px;
+  height: 30px;
+  opacity: 0.2;
+  transform: translate(-30%, -30%);
+  border-radius: 50%;
+}
 /*!=============== BASE ===============*/
 * {
   box-sizing: border-box;
@@ -303,13 +346,9 @@ body.light-theme {
   width: 190px;
   justify-self: center;
   height: 293px;
-  /* background: linear-gradient(
-    180deg,
-    hsla(var(--first-hue), var(--sat), var(--lig), 1),
-    hsla(var(--first-hue), var(--sat), var(--lig), 0.2)
-  ); */
   background: #243555;
-  border-radius: 10rem 10rem 1rem 1rem;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -478,6 +517,8 @@ body.light-theme {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
   line-height: 14px;
+  display: flex;
+  align-items: center;
 }
 .skills__label {
   font-size: var(--tiny-font-size);
@@ -916,17 +957,7 @@ footer {
 }
 
 /*! For large devices */
-@media screen and (max-width: 3000px) and (min-width: 700px) {
-  /* .container {
-    margin-right: auto;
-    margin-left: auto;
-  } */
-  /* .section {
-    padding: 6.5rem 0 1rem;
-  } */
-  /* .section__title {
-    margin-bottom: 3.5rem;
-  } */
+/* @media screen and (max-width: 3000px) and (min-width: 700px) {
   .nav {
     height: calc(var(--header-height)+1rem);
   }
@@ -936,10 +967,6 @@ footer {
     right: 0;
     margin: 0 auto;
   }
-  /* .home__handle {
-    width: 290px;
-    height: 400px;
-  } */
   .home__social-links {
     padding: 0.4rem;
     font-size: 1.25rem;
@@ -957,4 +984,4 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-}
+} */

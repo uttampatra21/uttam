@@ -1,3 +1,7 @@
+let loader = document.getElementById("preloader");
+window.addEventListener("load", () => {
+  loader.style.display = "none";
+});
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 const scrollHeader = () => {
   const header = document.getElementById("header");
@@ -72,3 +76,35 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+
+// ! ==============CURSOR====================
+const cursor = document.getElementById("cursor");
+let timeout;
+document.addEventListener("mousemove", (e) => {
+  let x = e.pageX;
+  let y = e.pageY;
+  cursor.style.top = y + "px";
+  cursor.style.left = x + "px";
+  cursor.style.display = "block";
+});
+function mouseStopped() {
+  cursor.style.display = "none";
+}
+clearTimeout(timeout);
+timeout = setTimeout(mouseStopped, 1000);
+
+document.addEventListener("mouseout", () => {
+  cursor.style.display = "none";
+});
+
+// ! color
+const homeHandle = document.querySelector(".home__handle");
+
+const colorChange = () => {
+  const random = Math.floor(Math.random() * 16777215);
+  const randomColor = `#${random.toString(16)}`;
+  homeHandle.style.background = randomColor;
+};
+homeHandle.addEventListener("click", () => {
+  colorChange();
+});
