@@ -1,7 +1,3 @@
-let loader = document.getElementById("preloader");
-window.addEventListener("load", () => {
-  loader.style.display = "none";
-});
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 const scrollHeader = () => {
   const header = document.getElementById("header");
@@ -98,13 +94,13 @@ document.addEventListener("mouseout", () => {
 });
 
 // ! color
-const homeHandle = document.querySelector(".home__handle");
+// const homeHandle = document.querySelector(".home__handle");
 
-const colorChange = () => {
-  const random = Math.floor(Math.random() * 16777215);
-  const randomColor = `#${random.toString(16)}`;
-  homeHandle.style.background = randomColor;
-};
-homeHandle.addEventListener("click", () => {
-  colorChange();
-});
+// const colorChange = () => {
+//   const random = Math.floor(Math.random() * 16777215);
+//   const randomColor = `#${random.toString(16)}`;
+//   homeHandle.style.background = randomColor;
+// };
+// homeHandle.addEventListener("click", () => {
+//   colorChange();
+// });
