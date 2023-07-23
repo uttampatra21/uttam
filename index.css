@@ -285,6 +285,7 @@ body.light-theme {
   border-radius: 4rem;
   padding: 1rem 2.25rem;
   backdrop-filter: blur(10px);
+  margin: 0 auto;
 }
 .nav__list {
   display: flex;
