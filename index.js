@@ -93,14 +93,4 @@ document.addEventListener("mouseout", () => {
   cursor.style.display = "none";
 });
 
-// ! color
-// const homeHandle = document.querySelector(".home__handle");
 
-// const colorChange = () => {
-//   const random = Math.floor(Math.random() * 16777215);
-//   const randomColor = `#${random.toString(16)}`;
-//   homeHandle.style.background = randomColor;
-// };
-// homeHandle.addEventListener("click", () => {
-//   colorChange();
-// });
