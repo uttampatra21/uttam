@@ -732,6 +732,7 @@ body.light-theme {
   margin: 0.25rem 0;
 }
 .my__projects p {
+  padding: 0 5px;
   font-size: var(--small-font-size);
   margin: 0.3rem 0;
   color: var(--text-color-light);
