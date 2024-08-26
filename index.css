@@ -278,6 +278,7 @@ body.light-theme {
   font-size: 1.5rem;
 }
 .nav___menu {
+  display: none;
   position: fixed;
   bottom: 1rem;
   background-color: hsl(var(--second-hue), 32%, 16%, 0.8);
