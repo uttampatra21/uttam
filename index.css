@@ -259,12 +259,16 @@ body.light-theme {
 .header {
   position: fixed;
   top: 0;
-  width: 70%;
+  left: 0;
+  width: 100%;
   background-color: var(--body-color);
   z-index: var(--z-fixed);
 }
+
 .nav {
   height: var(--header-height);
+  max-width: 70%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -296,7 +300,6 @@ body.light-theme {
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
 }
 .nav__link {
   color: var(--text-color);
@@ -308,7 +311,6 @@ body.light-theme {
 
 /*! Active link */
 .active-link:hover {
-
   background: linear-gradient(
     180deg,
     hsla(var(--first-hue), var(--sat), var(--lig), 1),
@@ -356,7 +358,7 @@ body.light-theme {
   font-size: var(--biggest-font-size);
 }
 .home__handle {
-  width: 190px;
+  width: 240px;
   justify-self: center;
   height: 293px;
   background: #243555;
@@ -367,8 +369,9 @@ body.light-theme {
   justify-content: center;
   overflow: hidden;
 }
-.home__img {
-  width: 160px;
+.home__image {
+  width: 100%;
+  height: 100%;
 }
 .home__buttons {
   display: flex;
@@ -707,7 +710,7 @@ body.light-theme {
 }
 .project__container {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 .project__section {
@@ -751,6 +754,19 @@ body.light-theme {
   gap: 0.4rem;
   margin: 0.75rem 0;
 }
+
+.project__using-skills .exp-company {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.project__using-skills .exp-company .left img {
+  width: 60px;
+  border-radius: 100px;
+}
+
 .project__using-skills button {
   padding: 0.2rem 0.5rem;
 }
@@ -875,7 +891,7 @@ footer {
 .footer__social ul li i {
   font-size: 1rem;
   background-color: var(--first-color);
-  color:  var(--body-color);
+  color: var(--body-color);
   padding: 0.25rem;
   border-radius: 0.25rem;
   display: inline-flex;
@@ -931,14 +947,14 @@ footer {
   .about__info {
     grid-template-columns: repeat(2, 1fr);
   }
-  .box{
+  .box {
     width: 100%;
   }
   .header {
     width: 100%;
   }
   .project__container {
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media screen and (max-width: 576px) {
@@ -965,14 +981,14 @@ footer {
     width: 360px;
     margin: 0 auto;
   }
-  .box{
+  .box {
     width: 100%;
   }
   .header {
     width: 100%;
   }
   .project__container {
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 /*! For medium devices */
